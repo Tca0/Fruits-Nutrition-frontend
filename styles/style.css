@@ -17,10 +17,33 @@
     max-width: 80%;
     border-radius: 10px;
     padding: 40px;
+    font-size: 15px;
+  }
+  .content > a {
+    font-weight: 900;
+    color: red;
+  }
+  .content > a:hover {
+    color: purple;
+    font-size: 18px;
   }
   #homeMain > p {
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 40px;
+  }
+
+  /* style list card */
+  #listCardsContainer > div {
+    margin: 20px 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: rgba(22,22,22, 0.5);
+  }
+  #listCardsContainer > div:hover {
+    cursor: pointer;
+    border-color: blue;
+    color: blue;
+    transform: rotate(10deg);
   }
