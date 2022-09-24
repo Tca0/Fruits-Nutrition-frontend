@@ -1,0 +1,26 @@
+#homeMain{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/frontEnd-background.webp');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 5% 20%;
+    background: rgba(22,22,22, 0.5);
+    max-width: 80%;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  #homeMain > p {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
