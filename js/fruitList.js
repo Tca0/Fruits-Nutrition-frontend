@@ -1,3 +1,4 @@
+// import { getListOfFruits } from "./app.js"
 const listContainer = document.getElementById('listCardsContainer')
 
 // function to map data to the page
