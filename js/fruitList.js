@@ -1,6 +1,7 @@
 // import { getListOfFruits } from "./app.js"
 const listContainer = document.getElementById('listCardsContainer')
 
+// const listOfData = getListOfFruits()
 // function to map data to the page
 function showFruitList(list) {
     list.forEach(ele => {
@@ -16,6 +17,7 @@ function showFruitList(list) {
         listContainer.appendChild(cardContainer)
     })
 }
+// showFruitList(listOfData)
 
 // fetch data from api
 const getListOfFruits = async () => {

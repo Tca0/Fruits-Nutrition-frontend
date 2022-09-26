@@ -3,9 +3,9 @@ const getListOfFruits = async () => {
         const rawData = await fetch('http://localhost:8888/fruits');
         const res = await rawData.json()
         console.log(res,)
-        return re
+        return res
     } catch(err) {
         console.log(err)
     }
 }
-export {getListOfFruits}
+export { getListOfFruits }
