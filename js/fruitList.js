@@ -1,9 +1,11 @@
-// import { getListOfFruits } from "./app.js"
+import { listOfData } from "./app.js"
+// need to add .js at the end of the file name otherwise the browser will not recognise it
 const listContainer = document.getElementById('listCardsContainer')
 
-// const listOfData = getListOfFruits()
 // function to map data to the page
 function showFruitList(list) {
+    // log the data to check if it the function got it
+    console.log(list)
     list.forEach(ele => {
         const cardContainer = document.createElement('div')
         cardContainer.setAttribute('id', ele.id)
@@ -17,17 +19,4 @@ function showFruitList(list) {
         listContainer.appendChild(cardContainer)
     })
 }
-// showFruitList(listOfData)
-
-// fetch data from api
-const getListOfFruits = async () => {
-    try{
-        const rawData = await fetch('http://localhost:8888/fruits');
-        const res = await rawData.json()
-        console.log(res,)
-        showFruitList(res)
-    } catch(err) {
-        console.log(err)
-    }
-}
-getListOfFruits()
+showFruitList(listOfData)
